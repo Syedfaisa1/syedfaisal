@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1226"/>
+      <stop offset="100%" stop-color="#120611"/>
+    </linearGradient>
+    <linearGradient id="roseGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff4d6d"/>
+      <stop offset="100%" stop-color="#c9184a"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="384" height="264" rx="16" fill="url(#p4Grad)" stroke="#ff4d6d" stroke-width="1.5"/>
+
+  <!-- Badges -->
+  <rect x="24" y="24" width="134" height="24" rx="6" fill="#ff4d6d" fill-opacity="0.2" stroke="#ff4d6d" stroke-width="1"/>
+  <text x="34" y="40" fill="#ff85a1" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">● CONVERSION ENGINE</text>
+
+  <!-- Metric Funnel / Concentric Vortex Waves -->
+  <g transform="translate(200, 140)">
+    <circle cx="0" cy="0" r="76" fill="none" stroke="#ff4d6d" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#ff758f" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#ff85a1" stroke-width="2.5" opacity="0.8"/>
+    <circle cx="0" cy="0" r="16" fill="url(#roseGlow)"/>
+  </g>
+
+  <!-- Big ROAS Stat -->
+  <text x="40" y="110" fill="#ffffff" font-family="sans-serif" font-size="36" font-weight="900">4.6x</text>
+  <text x="40" y="132" fill="#ff85a1" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">AVERAGE ROAS</text>
+
+  <text x="40" y="170" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="900">+340%</text>
+  <text x="40" y="190" fill="#ff85a1" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">CONVERSION VELOCITY</text>
+
+  <text x="24" y="252" fill="#ff85a1" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">
+    REAL-TIME ATTRIBUTION · META &amp; TIKTOK API
+  </text>
+</svg>

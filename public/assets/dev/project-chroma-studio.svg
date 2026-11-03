@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#092514"/>
+      <stop offset="100%" stop-color="#04120a"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b6fe00"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="384" height="264" rx="16" fill="url(#p3Grad)" stroke="#b6fe00" stroke-width="1.5"/>
+
+  <!-- Badges -->
+  <rect x="24" y="24" width="138" height="24" rx="6" fill="#b6fe00" fill-opacity="0.2" stroke="#b6fe00" stroke-width="1"/>
+  <text x="34" y="40" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">● GENERATIVE STUDIO</text>
+
+  <!-- Generative Canvas Shapes -->
+  <g transform="translate(180, 140)">
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#b6fe00" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <ellipse cx="0" cy="0" rx="75" ry="35" fill="none" stroke="#38bdf8" stroke-width="2" transform="rotate(45)"/>
+    <ellipse cx="0" cy="0" rx="75" ry="35" fill="none" stroke="#f43f5e" stroke-width="2" transform="rotate(-45)"/>
+    <polygon points="0,-45 40,25 -40,25" fill="url(#neonGlow)" fill-opacity="0.7"/>
+    <circle cx="0" cy="0" r="14" fill="#013900" stroke="#b6fe00" stroke-width="2"/>
+  </g>
+
+  <!-- Color Palette Dots -->
+  <circle cx="50" cy="100" r="12" fill="#b6fe00"/>
+  <circle cx="50" cy="132" r="12" fill="#004afd"/>
+  <circle cx="50" cy="164" r="12" fill="#f43f5e"/>
+  <circle cx="50" cy="196" r="12" fill="#a855f7"/>
+
+  <text x="24" y="252" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">
+    MULTI-AGENT ORCHESTRATION · WEBGL
+  </text>
+</svg>

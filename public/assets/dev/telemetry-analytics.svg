@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 340" width="100%" height="100%">
+  <defs>
+    <filter id="telemShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="telemBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141822"/>
+      <stop offset="100%" stop-color="#0c0e15"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b6fe00" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#b6fe00" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="8" y="8" width="444" height="324" rx="16" fill="url(#telemBg)" stroke="#262d3d" stroke-width="2" filter="url(#telemShadow)"/>
+
+  <!-- Header -->
+  <rect x="8" y="8" width="444" height="42" rx="16" fill="#1b202d"/>
+  <text x="24" y="34" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">
+    Runtime Telemetry &amp; Vitals
+  </text>
+  <rect x="340" y="18" width="96" height="22" rx="6" fill="#013900" stroke="#b6fe00" stroke-width="1"/>
+  <text x="388" y="33" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="middle">
+    60.0 FPS LOCKED
+  </text>
+
+  <!-- Telemetry Main Graph Area: Frame Time -->
+  <rect x="24" y="66" width="412" height="150" rx="10" fill="#11141c" stroke="#1f2533" stroke-width="1"/>
+  
+  <text x="38" y="88" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">
+    FRAME DURATION (TARGET 16.6ms)
+  </text>
+
+  <!-- Graph Grid Lines -->
+  <line x1="38" y1="105" x2="420" y2="105" stroke="#1e2330" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="38" y1="135" x2="420" y2="135" stroke="#1e2330" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="38" y1="165" x2="420" y2="165" stroke="#1e2330" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="38" y1="195" x2="420" y2="195" stroke="#1e2330" stroke-width="1"/>
+
+  <text x="424" y="108" fill="#475569" font-family="'JetBrains Mono', monospace" font-size="8">33ms (30fps)</text>
+  <text x="424" y="138" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="8">16.6ms (60fps)</text>
+  <text x="424" y="168" fill="#475569" font-family="'JetBrains Mono', monospace" font-size="8">8.3ms (120fps)</text>
+
+  <!-- Waveform fill & line (Smooth 16.6ms line with micro jitter) -->
+  <path d="M 38 135 L 70 134 L 110 136 L 150 135 L 190 134 L 230 136 L 270 135 L 310 134 L 350 135 L 390 135 L 420 135 L 420 195 L 38 195 Z" fill="url(#waveGrad)"/>
+  <path d="M 38 135 L 70 134 L 110 136 L 150 135 L 190 134 L 230 136 L 270 135 L 310 134 L 350 135 L 390 135 L 420 135" fill="none" stroke="#b6fe00" stroke-width="2"/>
+
+  <!-- Live Pulse Dot on Graph -->
+  <circle cx="420" cy="135" r="4" fill="#b6fe00">
+    <animate attributeName="r" values="4;7;4" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Bottom Metric Cards -->
+  <g transform="translate(24, 230)">
+    <!-- Metric 1 -->
+    <rect x="0" y="0" width="128" height="82" rx="8" fill="#161b25" stroke="#252c3c" stroke-width="1"/>
+    <text x="14" y="22" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">DROPPED FRAMES</text>
+    <text x="14" y="52" fill="#34d399" font-family="sans-serif" font-size="24" font-weight="800">0</text>
+    <text x="14" y="70" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Across all sessions</text>
+
+    <!-- Metric 2 -->
+    <rect x="142" y="0" width="128" height="82" rx="8" fill="#161b25" stroke="#252c3c" stroke-width="1"/>
+    <text x="156" y="22" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">HEAP MEMORY</text>
+    <text x="156" y="52" fill="#38bdf8" font-family="sans-serif" font-size="24" font-weight="800">42<tspan font-size="14">MB</tspan></text>
+    <text x="156" y="70" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Leak-free unmounts</text>
+
+    <!-- Metric 3 -->
+    <rect x="284" y="0" width="128" height="82" rx="8" fill="#161b25" stroke="#252c3c" stroke-width="1"/>
+    <text x="298" y="22" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">INTERACTION INP</text>
+    <text x="298" y="52" fill="#b6fe00" font-family="sans-serif" font-size="24" font-weight="800">8<tspan font-size="14">ms</tspan></text>
+    <text x="298" y="70" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Instant responsiveness</text>
+  </g>
+</svg>

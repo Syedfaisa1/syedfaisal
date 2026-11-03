@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" width="100%" height="100%">
+  <defs>
+    <filter id="deployShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141824"/>
+      <stop offset="100%" stop-color="#0d1017"/>
+    </linearGradient>
+    <linearGradient id="liveBadge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#013900"/>
+      <stop offset="100%" stop-color="#0d5203"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="10" y="10" width="500" height="370" rx="18" fill="url(#cloudGrad)" stroke="#262d3d" stroke-width="2" filter="url(#deployShadow)"/>
+
+  <!-- Top Title Bar -->
+  <path d="M 10 28 A 18 18 0 0 1 28 10 L 492 10 A 18 18 0 0 1 510 28 L 510 52 L 10 52 Z" fill="#1b2030"/>
+  <line x1="10" y1="52" x2="510" y2="52" stroke="#252d40" stroke-width="1"/>
+
+  <!-- Dots -->
+  <circle cx="32" cy="31" r="5.5" fill="#ff5f56"/>
+  <circle cx="50" cy="31" r="5.5" fill="#ffbd2e"/>
+  <circle cx="68" cy="31" r="5.5" fill="#27c93f"/>
+
+  <!-- Title -->
+  <text x="260" y="35" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    CI/CD Pipeline — Production Deployment
+  </text>
+
+  <!-- Live Status Badge -->
+  <rect x="382" y="21" width="112" height="22" rx="11" fill="url(#liveBadge)" stroke="#b6fe00" stroke-width="1"/>
+  <circle cx="395" cy="32" r="3.5" fill="#b6fe00">
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="444" y="36" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="middle">
+    ● LIVE 100%
+  </text>
+
+  <!-- Deployment Banner -->
+  <rect x="30" y="70" width="460" height="74" rx="12" fill="#181e2b" stroke="#2b3447" stroke-width="1"/>
+  <text x="48" y="96" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">PRODUCTION DEPLOYMENT SUCCESSFUL</text>
+  <text x="48" y="124" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="800">
+    https://syedfaisal.dev <tspan fill="#38bdf8" font-size="13">↗</tspan>
+  </text>
+  <rect x="370" y="86" width="104" height="42" rx="8" fill="#013900" stroke="#b6fe00" stroke-width="1"/>
+  <text x="422" y="103" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">EDGE GLOBAL</text>
+  <text x="422" y="121" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">12ms</text>
+
+  <!-- 4 Lighthouse Circular Scores -->
+  <text x="30" y="172" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="1">
+    GOOGLE LIGHTHOUSE AUDIT
+  </text>
+
+  <g transform="translate(30, 185)">
+    <!-- Score 1: Performance -->
+    <rect x="0" y="0" width="102" height="100" rx="10" fill="#161b26" stroke="#262e3f" stroke-width="1"/>
+    <circle cx="51" cy="42" r="24" fill="none" stroke="#222b3d" stroke-width="4"/>
+    <circle cx="51" cy="42" r="24" fill="none" stroke="#b6fe00" stroke-width="4" stroke-dasharray="150" stroke-dashoffset="0"/>
+    <text x="51" y="48" fill="#b6fe00" font-family="sans-serif" font-size="16" font-weight="800" text-anchor="middle">100</text>
+    <text x="51" y="85" fill="#94a3b8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Performance</text>
+
+    <!-- Score 2: Accessibility -->
+    <rect x="119" y="0" width="102" height="100" rx="10" fill="#161b26" stroke="#262e3f" stroke-width="1"/>
+    <circle cx="170" cy="42" r="24" fill="none" stroke="#222b3d" stroke-width="4"/>
+    <circle cx="170" cy="42" r="24" fill="none" stroke="#34d399" stroke-width="4" stroke-dasharray="150" stroke-dashoffset="0"/>
+    <text x="170" y="48" fill="#34d399" font-family="sans-serif" font-size="16" font-weight="800" text-anchor="middle">100</text>
+    <text x="170" y="85" fill="#94a3b8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Accessibility</text>
+
+    <!-- Score 3: Best Practices -->
+    <rect x="238" y="0" width="102" height="100" rx="10" fill="#161b26" stroke="#262e3f" stroke-width="1"/>
+    <circle cx="289" cy="42" r="24" fill="none" stroke="#222b3d" stroke-width="4"/>
+    <circle cx="289" cy="42" r="24" fill="none" stroke="#38bdf8" stroke-width="4" stroke-dasharray="150" stroke-dashoffset="0"/>
+    <text x="289" y="48" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="800" text-anchor="middle">100</text>
+    <text x="289" y="85" fill="#94a3b8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Best Practices</text>
+
+    <!-- Score 4: SEO -->
+    <rect x="358" y="0" width="102" height="100" rx="10" fill="#161b26" stroke="#262e3f" stroke-width="1"/>
+    <circle cx="409" cy="42" r="24" fill="none" stroke="#222b3d" stroke-width="4"/>
+    <circle cx="409" cy="42" r="24" fill="none" stroke="#a78bfa" stroke-width="4" stroke-dasharray="150" stroke-dashoffset="0"/>
+    <text x="409" y="48" fill="#a78bfa" font-family="sans-serif" font-size="16" font-weight="800" text-anchor="middle">100</text>
+    <text x="409" y="85" fill="#94a3b8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">SEO</text>
+  </g>
+
+  <!-- Bottom Commit / Branch Details -->
+  <rect x="30" y="304" width="460" height="52" rx="10" fill="#151923"/>
+  <text x="46" y="326" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">
+    Commit: <tspan fill="#38bdf8">7a9df2c</tspan> (Merge PR #14: Zero-Jank Physics &amp; Responsive Layout)
+  </text>
+  <text x="46" y="344" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9.5">
+    ✓ All 28 automated integration tests passed in 18.4s
+  </text>
+</svg>

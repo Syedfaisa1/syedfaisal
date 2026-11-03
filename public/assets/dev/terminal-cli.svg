@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 340" width="100%" height="100%">
+  <defs>
+    <filter id="termShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <linearGradient id="termGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14171f"/>
+      <stop offset="100%" stop-color="#0c0e14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="8" y="8" width="444" height="324" rx="16" fill="url(#termGrad)" stroke="#272d3b" stroke-width="2" filter="url(#termShadow)"/>
+
+  <!-- Title Bar -->
+  <path d="M 8 24 A 16 16 0 0 1 24 8 L 436 8 A 16 16 0 0 1 452 24 L 452 46 L 8 46 Z" fill="#1b202c"/>
+  <line x1="8" y1="46" x2="452" y2="46" stroke="#252b3b" stroke-width="1"/>
+
+  <!-- Buttons -->
+  <circle cx="28" cy="27" r="5.5" fill="#ff5f56"/>
+  <circle cx="46" cy="27" r="5.5" fill="#ffbd2e"/>
+  <circle cx="64" cy="27" r="5.5" fill="#27c93f"/>
+
+  <!-- Title Text -->
+  <text x="230" y="31" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">
+    syed@devbox: ~/projects/portfolio
+  </text>
+
+  <!-- Terminal Output -->
+  <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" letter-spacing="-0.2">
+    <!-- Command 1 -->
+    <text x="24" y="74">
+      <tspan fill="#b6fe00" font-weight="700">➜</tspan> <tspan fill="#38bdf8" font-weight="700">faisalfolio</tspan> <tspan fill="#94a3b8">git:(</tspan><tspan fill="#f43f5e">main</tspan><tspan fill="#94a3b8">)</tspan> <tspan fill="#e2e8f0">pnpm build</tspan>
+    </text>
+
+    <!-- Build Output -->
+    <text x="24" y="98" fill="#38bdf8">
+      ⚡ vite v6.3.0 building for production...
+    </text>
+    <text x="24" y="118" fill="#64748b">
+      transforming (142) modules...
+    </text>
+    <text x="24" y="138" fill="#34d399">
+      ✓ 142 modules transformed.
+    </text>
+
+    <!-- File Stats -->
+    <text x="24" y="162" fill="#94a3b8">
+      dist/index.html            <tspan fill="#cbd5e1">1.54 kB</tspan> │ gzip: 0.72 kB
+    </text>
+    <text x="24" y="180" fill="#94a3b8">
+      dist/assets/index.js       <tspan fill="#cbd5e1">84.2 kB</tspan> │ gzip: 26.1 kB
+    </text>
+    <text x="24" y="198" fill="#94a3b8">
+      dist/assets/physics.js     <tspan fill="#cbd5e1">32.8 kB</tspan> │ gzip: 11.4 kB
+    </text>
+
+    <!-- Success Message -->
+    <rect x="24" y="214" width="412" height="26" rx="6" fill="#013900" stroke="#b6fe00" stroke-width="1"/>
+    <text x="34" y="231" fill="#b6fe00" font-weight="700">
+      ✓ built in 186ms · zero jank · 60 FPS verified
+    </text>
+
+    <!-- Command 2 -->
+    <text x="24" y="268">
+      <tspan fill="#b6fe00" font-weight="700">➜</tspan> <tspan fill="#38bdf8" font-weight="700">faisalfolio</tspan> <tspan fill="#94a3b8">git:(</tspan><tspan fill="#f43f5e">main</tspan><tspan fill="#94a3b8">)</tspan> <tspan fill="#e2e8f0">git commit -m "feat: living physics"</tspan>
+    </text>
+
+    <!-- Git Output -->
+    <text x="24" y="290" fill="#cbd5e1">
+      [main 7a9df2c] feat: living physics &amp; modular architecture
+    </text>
+
+    <!-- Active Prompt Cursor -->
+    <text x="24" y="312">
+      <tspan fill="#b6fe00" font-weight="700">➜</tspan> <tspan fill="#e2e8f0"></tspan>
+    </text>
+    <rect x="42" y="302" width="7" height="12" fill="#b6fe00">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

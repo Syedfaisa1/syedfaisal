@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" width="100%" height="100%">
+  <defs>
+    <filter id="figmaShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="figHeader" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c2c2c"/>
+      <stop offset="100%" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <linearGradient id="figCanvas" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Container -->
+  <rect x="10" y="10" width="500" height="370" rx="18" fill="url(#figCanvas)" stroke="#383838" stroke-width="2" filter="url(#figmaShadow)"/>
+
+  <!-- Figma Header Bar -->
+  <path d="M 10 28 A 18 18 0 0 1 28 10 L 492 10 A 18 18 0 0 1 510 28 L 510 50 L 10 50 Z" fill="url(#figHeader)"/>
+  <line x1="10" y1="50" x2="510" y2="50" stroke="#333333" stroke-width="1"/>
+
+  <!-- Figma Icon -->
+  <g transform="translate(24, 22)">
+    <rect x="0" y="0" width="6" height="6" rx="3" fill="#F24E1E"/>
+    <rect x="6" y="0" width="6" height="6" rx="3" fill="#FF7262"/>
+    <rect x="0" y="6" width="6" height="6" rx="3" fill="#A259FF"/>
+    <circle cx="9" cy="9" r="3" fill="#1ABCFE"/>
+    <path d="M 0 12 A 3 3 0 0 1 6 12 L 6 15 A 3 3 0 0 1 0 15 Z" fill="#0ACF83"/>
+  </g>
+
+  <!-- Title / Breadcrumb -->
+  <text x="50" y="35" fill="#f5f5f5" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="600">
+    Design System / Tactile Architecture <tspan fill="#888888" font-size="11">v3.2</tspan>
+  </text>
+
+  <!-- Zoom & Status -->
+  <rect x="420" y="22" width="76" height="20" rx="4" fill="#0d99ff"/>
+  <text x="458" y="36" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Share</text>
+
+  <!-- Sidebar Tool Icons (left) -->
+  <rect x="10" y="51" width="36" height="328" fill="#1e1e1e"/>
+  <line x1="46" y1="51" x2="46" y2="379" stroke="#2a2a2a" stroke-width="1"/>
+  <!-- Cursor tool -->
+  <path d="M 22 70 L 22 84 L 26 80 L 30 88 L 32 87 L 28 79 L 34 79 Z" fill="#0d99ff"/>
+  <!-- Frame tool -->
+  <rect x="22" y="100" width="12" height="12" fill="none" stroke="#888888" stroke-width="1.5"/>
+  <!-- Shape tool -->
+  <circle cx="28" cy="136" r="6" fill="none" stroke="#888888" stroke-width="1.5"/>
+  <!-- Text tool -->
+  <text x="24" y="172" fill="#888888" font-family="serif" font-size="14" font-weight="bold">T</text>
+
+  <!-- Main Figma Artboard Canvas -->
+  <!-- Artboard 1: Color Tokens -->
+  <rect x="66" y="70" width="200" height="120" rx="10" fill="#202024" stroke="#0d99ff" stroke-width="1.5"/>
+  <text x="80" y="90" fill="#0d99ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">#COLOR_TOKENS</text>
+  
+  <!-- Swatch 1: Neon Volt -->
+  <rect x="80" y="102" width="36" height="42" rx="6" fill="#b6fe00"/>
+  <text x="80" y="156" fill="#cccccc" font-family="'JetBrains Mono', monospace" font-size="9">#b6fe00</text>
+  
+  <!-- Swatch 2: Deep Forest -->
+  <rect x="126" y="102" width="36" height="42" rx="6" fill="#013900"/>
+  <text x="126" y="156" fill="#cccccc" font-family="'JetBrains Mono', monospace" font-size="9">#013900</text>
+
+  <!-- Swatch 3: Electric Blue -->
+  <rect x="172" y="102" width="36" height="42" rx="6" fill="#004afd"/>
+  <text x="172" y="156" fill="#cccccc" font-family="'JetBrains Mono', monospace" font-size="9">#004afd</text>
+
+  <!-- Swatch 4: Slate Dark -->
+  <rect x="218" y="102" width="36" height="42" rx="6" fill="#0b0e14" stroke="#333" stroke-width="1"/>
+  <text x="218" y="156" fill="#cccccc" font-family="'JetBrains Mono', monospace" font-size="9">#0b0e14</text>
+
+  <!-- Artboard 2: Fluid UI Button Component -->
+  <rect x="282" y="70" width="210" height="120" rx="10" fill="#202024" stroke="#383838" stroke-width="1"/>
+  <text x="296" y="90" fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">#KINETIC_COMPONENTS</text>
+  
+  <!-- Tactile Pill Button -->
+  <rect x="296" y="106" width="180" height="36" rx="18" fill="#013900" stroke="#b6fe00" stroke-width="1.5"/>
+  <text x="386" y="129" fill="#b6fe00" font-family="sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing="1">
+    EXPLORE WORK ➜
+  </text>
+  <text x="296" y="162" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">
+    State: Hover / Spring Stiffness 320
+  </text>
+
+  <!-- Artboard 3: Vector Bezier & Physics Spine Wireframe -->
+  <rect x="66" y="206" width="426" height="154" rx="10" fill="#202024" stroke="#383838" stroke-width="1"/>
+  <text x="80" y="226" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">
+    #INTERACTION_CURVES &amp; SYSTEM_SPEC
+  </text>
+
+  <!-- Grid background inside artboard -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="0.5">
+    <line x1="80" y1="240" x2="470" y2="240"/>
+    <line x1="80" y1="270" x2="470" y2="270"/>
+    <line x1="80" y1="300" x2="470" y2="300"/>
+    <line x1="80" y1="330" x2="470" y2="330"/>
+    <line x1="160" y1="230" x2="160" y2="350"/>
+    <line x1="240" y1="230" x2="240" y2="350"/>
+    <line x1="320" y1="230" x2="320" y2="350"/>
+    <line x1="400" y1="230" x2="400" y2="350"/>
+  </g>
+
+  <!-- Smooth Cubic Bezier Spline -->
+  <path d="M 90 320 C 170 320, 210 245, 290 260 S 410 240, 460 250" fill="none" stroke="#0d99ff" stroke-width="2.5"/>
+  <!-- Bezier Handles & Points -->
+  <circle cx="90" cy="320" r="4" fill="#0d99ff" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="290" cy="260" r="4" fill="#b6fe00" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="460" cy="250" r="4" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="250" y1="275" x2="290" y2="260" stroke="#b6fe00" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="330" y1="245" x2="290" y2="260" stroke="#b6fe00" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="250" cy="275" r="3" fill="#b6fe00"/>
+  <circle cx="330" cy="245" r="3" fill="#b6fe00"/>
+
+  <text x="90" y="344" fill="#888888" font-family="'JetBrains Mono', monospace" font-size="9">
+    Ease: cubic-bezier(0.25, 1, 0.5, 1) · 60fps natural inertia
+  </text>
+</svg>

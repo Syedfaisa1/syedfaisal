@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <defs>
+    <filter id="tagDevShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Tag Container with Corner Notch -->
+  <path d="M 12 28 L 28 12 L 292 12 A 16 16 0 0 1 308 28 L 308 192 A 16 16 0 0 1 292 208 L 28 208 A 16 16 0 0 1 12 192 Z" fill="#013900" stroke="#b6fe00" stroke-width="2.5" filter="url(#tagDevShadow)"/>
+
+  <!-- Top Hole Punch (Reinforced Ring) -->
+  <circle cx="36" cy="36" r="10" fill="#b6fe00"/>
+  <circle cx="36" cy="36" r="5" fill="#013900"/>
+
+  <!-- Content -->
+  <text x="60" y="42" fill="#b6fe00" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="1">
+    FULLSTACK ARCHITECTURE
+  </text>
+
+  <!-- Big Bold Typography -->
+  <text x="32" y="86" fill="#ffffff" font-family="sans-serif" font-size="28" font-weight="900" letter-spacing="-1">
+    MERN + CLOUD
+  </text>
+  <text x="32" y="116" fill="#b6fe00" font-family="sans-serif" font-size="28" font-weight="900" letter-spacing="-1">
+    TYPESCRIPT
+  </text>
+
+  <!-- Subtitle / Spec details -->
+  <line x1="32" y1="130" x2="288" y2="130" stroke="#b6fe00" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="32" y="148" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">
+    DOCKER · CI/CD · POSTGRES · REST &amp; GRAPHQL
+  </text>
+
+  <!-- Barcode Simulation -->
+  <g transform="translate(32, 162)" fill="#b6fe00">
+    <rect x="0" y="0" width="3" height="30"/>
+    <rect x="6" y="0" width="2" height="30"/>
+    <rect x="11" y="0" width="5" height="30"/>
+    <rect x="19" y="0" width="2" height="30"/>
+    <rect x="24" y="0" width="4" height="30"/>
+    <rect x="31" y="0" width="6" height="30"/>
+    <rect x="40" y="0" width="2" height="30"/>
+    <rect x="45" y="0" width="5" height="30"/>
+    <rect x="53" y="0" width="3" height="30"/>
+    <rect x="59" y="0" width="7" height="30"/>
+    <rect x="69" y="0" width="2" height="30"/>
+    <rect x="74" y="0" width="4" height="30"/>
+    <rect x="81" y="0" width="2" height="30"/>
+    <rect x="86" y="0" width="6" height="30"/>
+    <rect x="95" y="0" width="3" height="30"/>
+    <rect x="101" y="0" width="5" height="30"/>
+    <rect x="109" y="0" width="2" height="30"/>
+    <rect x="114" y="0" width="6" height="30"/>
+    <rect x="123" y="0" width="3" height="30"/>
+    <rect x="129" y="0" width="4" height="30"/>
+    <rect x="136" y="0" width="2" height="30"/>
+    <rect x="141" y="0" width="5" height="30"/>
+    <rect x="149" y="0" width="4" height="30"/>
+    <rect x="156" y="0" width="2" height="30"/>
+    <rect x="161" y="0" width="6" height="30"/>
+    <rect x="170" y="0" width="3" height="30"/>
+    <rect x="176" y="0" width="2" height="30"/>
+    <rect x="181" y="0" width="5" height="30"/>
+    <rect x="189" y="0" width="3" height="30"/>
+    <rect x="195" y="0" width="6" height="30"/>
+    <rect x="204" y="0" width="2" height="30"/>
+    <rect x="209" y="0" width="4" height="30"/>
+    <rect x="216" y="0" width="3" height="30"/>
+    <rect x="222" y="0" width="5" height="30"/>
+  </g>
+</svg>

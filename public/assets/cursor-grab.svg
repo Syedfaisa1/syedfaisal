@@ -1,0 +1,13 @@
+<svg width="48" height="52" viewBox="0 0 48 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft drop shadow -->
+  <g filter="drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4))">
+    <!-- Open Hand Silhouette Outline -->
+    <path d="M19 14V6C19 4.34 17.66 3 16 3C14.34 3 13 4.34 13 6V20.5L11.2 18.2C10.05 16.75 8.05 16.5 6.6 17.65C5.15 18.8 4.9 20.8 6.05 22.25L13.5 31.8C16.8 36 21.8 38.5 27.2 38.5H29.5C36.4 38.5 42 32.9 42 26V14C42 12.34 40.66 11 39 11C37.34 11 36 12.34 36 14V21H34.5V9C34.5 7.34 33.16 6 31.5 6C29.84 6 28.5 7.34 28.5 9V21H27V7C27 5.34 25.66 4 24 4C22.34 4 21 5.34 21 7V21H19V14Z"
+      fill="#111111" stroke="#111111" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- Cream Fill Matching Custom Cursor -->
+    <path d="M19 14V6C19 4.34 17.66 3 16 3C14.34 3 13 4.34 13 6V20.5L11.2 18.2C10.05 16.75 8.05 16.5 6.6 17.65C5.15 18.8 4.9 20.8 6.05 22.25L13.5 31.8C16.8 36 21.8 38.5 27.2 38.5H29.5C36.4 38.5 42 32.9 42 26V14C42 12.34 40.66 11 39 11C37.34 11 36 12.34 36 14V21H34.5V9C34.5 7.34 33.16 6 31.5 6C29.84 6 28.5 7.34 28.5 9V21H27V7C27 5.34 25.66 4 24 4C22.34 4 21 5.34 21 7V21H19V14Z"
+      fill="#fdfbf7"/>
+    <!-- Finger joint creases -->
+    <path d="M21 16H19M27 15H25M33 16H31M39 18H37" stroke="#111111" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+</svg>
