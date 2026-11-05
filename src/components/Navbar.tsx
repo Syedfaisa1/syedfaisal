@@ -249,7 +249,7 @@ export default function Navbar({
       {/* 2. SWEET TAPE "PULL ME" PULL-DOWN MENU SYSTEM */}
       <div
         ref={menuContainerRef}
-        className={`fixed top-0 right-4 sm:right-8 md:right-12 z-50 flex flex-col items-end transition-all duration-500 ease-out ${
+        className={`fixed top-0 right-3 sm:right-6 md:right-8 lg:right-12 z-50 flex flex-col items-end transition-all duration-500 ease-out ${
           isReady
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-20 pointer-events-none"
@@ -258,10 +258,10 @@ export default function Navbar({
         {/* A. SLIDE-DOWN PAPER PANEL */}
         <div
           ref={menuPanelRef}
-          className="overflow-hidden w-[310px] sm:w-[360px] md:w-[410px] bg-[#f4f3ef] rounded-bl-[28px] shadow-[-12px_24px_50px_rgba(0,0,0,0.35)]"
+          className="overflow-hidden w-[240px] sm:w-[290px] md:w-[330px] lg:w-[390px] bg-[#f4f3ef] rounded-bl-[20px] sm:rounded-bl-[24px] md:rounded-bl-[28px] shadow-[-12px_24px_50px_rgba(0,0,0,0.35)]"
           style={{ height: 0 }}
         >
-          <div ref={menuSheetRef} className="px-6 sm:px-8 pt-7 pb-6 select-none">
+          <div ref={menuSheetRef} className="px-4 sm:px-5 md:px-7 pt-4 sm:pt-5 md:pt-6 pb-3 sm:pb-4 md:pb-5 select-none">
             {/* List of Menu Items */}
             <ul className="flex flex-col m-0 p-0 list-none">
               {MENU_ITEMS.map((item, idx) => {
@@ -319,17 +319,17 @@ export default function Navbar({
                         setHoveredItem(item.id)
                         if (isSoundOn) playSound("hover")
                       }}
-                      className="group flex items-center justify-between py-3.5 sm:py-4 cursor-pointer no-underline text-[#013900] transition-colors duration-200"
+                      className="group flex items-center justify-between py-2 sm:py-2.5 md:py-3.5 cursor-pointer no-underline text-[#013900] transition-colors duration-200"
                     >
-                      <div className="flex items-center gap-3 sm:gap-4 overflow-hidden">
+                      <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3.5 overflow-hidden">
                         {/* Animated Pop-out Sticker Badge on Hover */}
                         <div
                           className={`shrink-0 overflow-hidden rounded-2xl p-1 bg-gradient-to-tr ${
                             item.bgColor
                           } shadow-md transition-all duration-300 ease-out ${
                             isHovered
-                              ? "w-12 h-12 sm:w-14 sm:h-14 opacity-100 -rotate-6 scale-100"
-                              : "w-0 h-12 sm:h-14 opacity-0 scale-50 -rotate-12"
+                              ? "w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-100 -rotate-6 scale-100"
+                              : "w-0 h-8 sm:h-10 md:h-12 lg:h-14 opacity-0 scale-50 -rotate-12"
                           }`}
                         >
                           <img
@@ -344,7 +344,7 @@ export default function Navbar({
                           ref={(el) => {
                             labelsRef.current[idx] = el
                           }}
-                          className="font-sweet-tape text-[38px] sm:text-[46px] font-black leading-none tracking-tight transition-transform duration-200 group-hover:translate-x-1"
+                          className="font-sweet-tape text-[24px] sm:text-[28px] md:text-[34px] lg:text-[42px] font-black leading-none tracking-tight transition-transform duration-200 group-hover:translate-x-1"
                         >
                           {item.label}
                         </span>
@@ -355,13 +355,13 @@ export default function Navbar({
                         ref={(el) => {
                           arrowsRef.current[idx] = el
                         }}
-                        className="shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#b6fe00] text-[#013900] flex items-center justify-center transition-all duration-300 group-hover:rotate-45 group-hover:scale-110 shadow-sm"
+                        className="shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full bg-[#b6fe00] text-[#013900] flex items-center justify-center transition-all duration-300 group-hover:rotate-45 group-hover:scale-110 shadow-sm"
                         aria-hidden="true"
                       >
                         <svg
                           viewBox="0 0 12 12"
                           fill="none"
-                          className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-current stroke-[2.4]"
+                          className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 stroke-current stroke-[2.4]"
                         >
                           <path
                             d="M1.4 10.6 10.6 1.4M3.6 1.4h7v7"
@@ -404,7 +404,7 @@ export default function Navbar({
           }}
         >
           {/* Ticket Header & Body */}
-          <div className="relative bg-[#f4f3ef] text-[#013900] px-5 sm:px-6 pt-3 pb-1.5 min-w-[110px] sm:min-w-[125px] flex flex-col items-center">
+          <div className="relative bg-[#f4f3ef] text-[#013900] px-3 sm:px-4 md:px-5 pt-2 sm:pt-2.5 md:pt-3 pb-1 sm:pb-1.5 min-w-[85px] sm:min-w-[100px] md:min-w-[115px] flex flex-col items-center">
             {/* Top Dashed Perforation Line */}
             <div
               className="h-[2px] w-full mb-1.5"
@@ -418,12 +418,12 @@ export default function Navbar({
 
             {/* "PULL ME" text with arrow hint */}
             <div className="flex items-center justify-center gap-1.5">
-              <span className="font-sweet-tape text-[16px] sm:text-[18px] font-extrabold tracking-tight">
+              <span className="font-sweet-tape text-[13px] sm:text-[15px] md:text-[17px] font-extrabold tracking-tight">
                 {isOpen ? "CLOSE" : "PULL ME"}
               </span>
               <svg
                 viewBox="0 0 10 10"
-                className={`w-3 h-3 text-[#013900] transition-transform duration-300 ${
+                className={`w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#013900] transition-transform duration-300 ${
                   isOpen ? "rotate-180" : "group-hover:translate-y-0.5"
                 }`}
                 fill="currentColor"
@@ -437,7 +437,7 @@ export default function Navbar({
           <svg
             viewBox="0 0 100 15"
             preserveAspectRatio="none"
-            className="w-full h-[14px] text-[#f4f3ef] fill-current block"
+            className="w-full h-[10px] sm:h-[12px] md:h-[14px] text-[#f4f3ef] fill-current block"
             aria-hidden="true"
           >
             <path d="M0 0L0 11Q0 15 4.29 12.43L20.71 2.57Q25 0 29.29 2.57L45.71 12.43Q50 15 54.29 12.43L70.71 2.57Q75 0 79.29 2.57L95.71 12.43Q100 15 100 11L100 0Z" />

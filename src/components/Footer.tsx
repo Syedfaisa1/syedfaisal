@@ -12,6 +12,7 @@ import adsBadge from "../assets/footer_sticker/Glossy Digital Ads Marketing Badg
 
 interface FooterProps {
   isLightMode?: boolean
+  topCurveColor?: string
 }
 
 const FOOTER_NAV = [
@@ -20,13 +21,21 @@ const FOOTER_NAV = [
   { label: "CONTACT", href: "#contact" },
 ]
 
-export default function Footer({ isLightMode: _isLightMode = false }: FooterProps) {
+export default function Footer({
+  isLightMode = false,
+  topCurveColor,
+}: FooterProps) {
   const navigate = useNavigate()
   const location = useLocation()
   const footerRef = useRef<HTMLElement | null>(null)
   const bottomRef = useRef<HTMLDivElement | null>(null)
   const headlineRef = useRef<HTMLHeadingElement | null>(null)
   const ballsRef = useRef<(HTMLDivElement | HTMLAnchorElement | null)[]>([])
+
+  const isAboutPage = location.pathname === "/about"
+  const curveFill =
+    topCurveColor ||
+    (isAboutPage ? (isLightMode ? "#ffffff" : "#004afd") : "#b6fe00")
 
   useEffect(() => {
     const footer = footerRef.current
@@ -74,12 +83,13 @@ export default function Footer({ isLightMode: _isLightMode = false }: FooterProp
         aria-hidden="true"
       />
 
-      {/* 2. TOP SCOOPED ARCHED CURVE (Bridges directly from Contact Section) */}
+      {/* 2. TOP SCOOPED ARCHED CURVE (Bridges directly from Contact or About Section) */}
       <div className="absolute top-0 left-0 right-0 z-20 pointer-events-none overflow-hidden">
         <svg
           viewBox="0 0 1456 160"
           preserveAspectRatio="none"
-          className="w-full h-[10.5vw] min-h-[55px] max-h-[145px] block fill-current text-[#b6fe00]"
+          className="w-full h-[10.5vw] min-h-[55px] max-h-[145px] block fill-current transition-colors duration-500"
+          style={{ color: curveFill }}
         >
           <path d="M0 0 L1456 0 C801.9 272 212.833 113.333 0 0 Z" />
         </svg>
